@@ -1,0 +1,50 @@
+[
+    [
+        "Project 2.full credit tests.full credit: algorithm complexities.that canMake is linear",
+        {
+            "showSteps": false,
+            "maxSteps": 20,
+            "initSteps": 11,
+            "minRuntime": 0.5,
+            "extendRange": false,
+            "maxTimeout": 5,
+            "maxBlowup": -1
+        }
+    ],
+    [
+        "Project 2.full credit tests.full credit: algorithm complexities.that validMoves is linear",
+        {
+            "showSteps": false,
+            "maxSteps": 20,
+            "initSteps": 3,
+            "minRuntime": 0.5,
+            "extendRange": false,
+            "maxTimeout": 5,
+            "maxBlowup": -1
+        }
+    ],
+    [
+        "Project 2.full credit tests.full credit: algorithm complexities.that powerset is non-poly",
+        {
+            "showSteps": false,
+            "maxSteps": 30,
+            "initSteps": 20,
+            "minRuntime": 0.5,
+            "extendRange": false,
+            "maxTimeout": 5,
+            "maxBlowup": -1
+        }
+    ],
+    [
+        "Project 2.full credit tests.full credit: algorithm complexities.that greedyPlay is polynomial",
+        {
+            "showSteps": false,
+            "maxSteps": 340,
+            "initSteps": 319,
+            "minRuntime": 0.5,
+            "extendRange": false,
+            "maxTimeout": 5,
+            "maxBlowup": -1
+        }
+    ]
+]

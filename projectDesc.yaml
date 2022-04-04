@@ -1,0 +1,6 @@
+srcFile : Scavenge.hs
+exeFile : scavenge
+
+builtIns: []
+
+borings: []
