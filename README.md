@@ -1,4 +1,4 @@
-# Scavenge Word Game Project
+# Scavenge Project
 Creating a word game and using four different AI implementations to solve it
 
 This project description is summarized from the course requirements. The project required implementing the gameplay logic, creating four different solving algorithms, and reducing the complexity of each algorithm for efficiency. Algorithms include a greedy algorithm, two brute force algorithms, and a game tree algorithm.
@@ -30,25 +30,11 @@ The executable scavenge can be built using `make`. The executable and compiled s
 * `-s str` or `--solve=str`	Solve the game, instead of playing interactively. str must be greedy, nBrute, sBrute, or best.
 
 ## Scavenge Mechanics
-For the milestone, you must implement the basic mechanics of Scavenge. You are given the following type aliases to differentiate all the strings you will be handling.
-
-                   type Hand = [Char]
-                type Dictionary = [String]
-                type Move = String
-                type Play = [Move]
-
-We break the mechanics of the game into the following areas: 
-Scoring a move (a single string) or a play (a list of moves).
-Making a move. This involves updating a hand by removing all the letters of a move from the hand.
-Note a letter may occur multiple times in a hand. You should only remove it once for each time that
-letter occurs in the move.
-Determining if a move/play if valid. For a move of a string to be valid, the string must be a word 
-(in a dictionary), and the hand must be able to make the string.
-Note that a letter may occur multiple times in a string. For the play to be valid, that letter must occur 
-at least that many times in the hand.
-Determining all the independently valid moves for a given hand and dictionary. Since the moves are 
-independent, using letters from the hand to make one move does not exclude these letters from being 
-used in a different way for a different move.
+* Scoring a move (a single string) or a play (a list of moves).
+* Making a move. This involves updating a hand by removing all the letters of a move from the hand.
+* Determining if a move/play if valid. For a move of a string to be valid, the string must be a word (in a dictionary), and the hand must be able to make the string.
+* Note that a letter may occur multiple times in a string. For the play to be valid, that letter must occur at least that many times in the hand.
+* Determining all the independently valid moves for a given hand and dictionary. Since the moves are independent, using letters from the hand to make one move does not exclude these letters from being used in a different way for a different move.
 
 ## Solving Scavenge
 Each solver takes a dictionary and a hand, and return a play that does well. Only the last solver is guaranteed to return the best possible play.
